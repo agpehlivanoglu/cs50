@@ -44,54 +44,38 @@ int main(void)
     int sum = y + z;
     if (sum%10 == 0)
     {
-        if (nDigits<15 || nDigits>16)
-        {
+        if (nDigits<15 || nDigits>16)        
             printf("INVALID\n");
-        }
+        
         if (nDigits==15)
         {
-            if ((num/(b) % 10) == 3 && (num/(c) % 10) == 4)
-            {
-                printf("AMEX\n");
-            }
-            else if ((num/(b) % 10) == 3 && (num/(c) % 10) == 7)
-            {
-                printf("AMEX\n");
-            }
-            else
-            {
-                printf("INVALID\n");
-            }
+            if ((num/(b) % 10) == 3 && (num/(c) % 10) == 4)            
+                printf("AMEX\n");            
+            else if ((num/(b) % 10) == 3 && (num/(c) % 10) == 7)            
+                printf("AMEX\n");            
+            else            
+                printf("INVALID\n");            
         }
+        
         if (nDigits==16)
         {
-            if ((num/(b) % 10) == 4)
-            {
-                printf("VISA\n");
-            }
+            if ((num/(b) % 10) == 4)            
+                printf("VISA\n");       
             else
             {
                 if ((num/(b) % 10) == 5)
                 {
-                    if ((num/(c) % 10)==1|| (num/(c)%10)==2|| (num/(c)%10)==3||(num/(c)%10)==4||(num/(c)%10)==5)
-                    {
-                        printf("MASTERCARD\n");
-                    }
-                    else
-                    {
-                         printf("INVALID\n"); 
-                    }
+                    if ((num/(c) % 10)==1|| (num/(c)%10)==2|| (num/(c)%10)==3||(num/(c)%10)==4||(num/(c)%10)==5)             
+                        printf("MASTERCARD\n");                    
+                    else                  
+                         printf("INVALID\n");                    
                 }
-                else
-                {
-                   printf("INVALID\n"); 
-                }
+                else                
+                   printf("INVALID\n");                 
             }
         }        
     }
-    else 
-    {
+    else    
         printf("INVALID\n");
-    }
 }
 
