@@ -1,4 +1,4 @@
-// Luhn’un Algoritmasý, CS50
+// Luhnâ€™un Algoritmasi, CS50
 
 #include <stdio.h>
 #include <cs50.h>
@@ -10,42 +10,37 @@ int main(void)
     int y = 0;
     int z = 0;
     long num = get_long("Credit Card Number: ");
-//  Basamak sayýsýný buluyoruz
+//  Basamak sayisini buluyoruz
     int nDigits = floor(log10(num)) + 1;
-//  printf("Basamak sayýsý: %i\n",nDigits);
     
-//  sondan ikinci rakamdan baþlayýp ikiþer ikiþer rakamlarý belirlemek ve toplamak için
+//  sondan ikinci rakamdan baÃ¾layÃ½p ikiser ikiser rakamlari belirlemek ve toplamak iÃ§in
     for (int i = nDigits-1; i>0; i-=2 )
     {
-        long a1 = pow(10,(nDigits-i)); // 10 üzeri ...
+        long a1 = pow(10,(nDigits-i)); // 10 Ã¼zeri ...
         x = (num/(a1) % 10);
-        x = x*2; // kural gereði iki ile çarpýyoruz her rakamý
-        if (x>=10)  // iki ile çarpýnca çýkan sonucu deðil sonucun rakamlarýný toplamak içim
+        x = x*2; // kural gereÃ°i iki ile Ã§arpiyoruz her rakami
+        if (x>=10)  // iki ile Ã§arpÃ½nca Ã§Ã½kan sonucu deÃ°il sonucun rakamlarini toplamak iÃ§im
         {
             x = 1 + (x%10);
         }
-//        printf("%i\n",x);
         y = y + x;
 
     }
-//    printf("%i\n",y);
      
-//  sonuncu rakamdan baþlayýp ikiþer ikiþer rakamlarý belirlemek ve toplamak için
+//  sonuncu rakamdan baslayip ikiser ikiser rakamlari belirlemek ve toplamak iÃ§in
     for (int j=nDigits; j>0; j-=2 )
     {
         long a2 = pow(10,(nDigits-j));
-            x = (num/(a2) % 10);
-//        printf("%i\n",x);
+        x = (num/(a2) % 10);
         z = z + x;
     }
-    
-//   printf("%i\n",z);
 
-//  bunlarý ilk ve ikinci rakamý belirlemek için kullanýyoruz
+
+//  bunlari ilk ve ikinci rakami belirlemek iÃ§in kullaniyoruz
     long b = (pow(10,nDigits-1));
     long c = (pow(10,nDigits-2));
 
-// Geçerli - Geçersiz olmasýný ve Hangi þirketin kartý olduðunu belirlemek için
+// GeÃ§erli - GeÃ§ersiz olmasini ve Hangi sirketin karti olduÃ°unu belirlemek iÃ§in
     int sum = y + z;
     if (sum%10 == 0)
     {
