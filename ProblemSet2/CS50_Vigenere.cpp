@@ -16,9 +16,7 @@ int main(int argc, string argv[])
     }
     // checks to make sure that each character of that command line argument is a decimal digit
     else
-    {
         check(argv[1]);      
-    }
     
     int numkey = strlen(argv[1]); //gets the total number of characters in argument
     //creating an array to store all of the character numbers
@@ -33,7 +31,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, j = 0, n = strlen(s); i < n; i++) //using just one loop, but keeping track of j myself
     {
-        if (j >= numkey){j = 0;} //If the length of the keyword is, say, 4 characters, then the last character of that keyword can be found at keyword[3]. Then, for the next character you encipher, you’ll want to use keyword[0].
+        if (j >= numkey){j = 0;} //If the length of the keyword is, say, 4 characters, then the last character of that keyword can be found at keyword[3]. Then, for the next character you encipher, youâ€™ll want to use keyword[0].
         if (!isalpha(s[i])) //to not changing the punctuation marks or empty spaces
         {
             printf("%c", s[i]);
