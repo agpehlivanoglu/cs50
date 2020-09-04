@@ -1,5 +1,7 @@
 // Copies a BMP file
 
+// To execute: ./whodunit clue.bmp verdict.bmp
+
 #include <stdio.h>
 #include <stdlib.h>
 
