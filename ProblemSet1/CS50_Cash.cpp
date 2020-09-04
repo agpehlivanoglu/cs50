@@ -41,6 +41,5 @@ int main(void)
         remaining -= 1;
     }
 
-    printf("The minimal number of coins you’re dispensing for the customer is %i\n",x);
+    printf("The minimal number of coins youâ€™re dispensing for the customer is %i\n",x);
 }
-
