@@ -1,5 +1,7 @@
 // Copies a BMP file
 
+// To execute: ./copy smiley.bmp copy.bmp
+
 #include <stdio.h>
 #include <stdlib.h>
 
