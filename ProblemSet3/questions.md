@@ -47,7 +47,8 @@ fread's third argument is always 1 because we are iterating over every pixel.
 
 ## What value does line 63 of `copy.c` assign to `padding` if `bi.biWidth` is `3`?
 
-int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4 *This step ensures the number of bytes in every row is a multiple of 4*
+int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4 
+*This step ensures the number of bytes in every row is a multiple of 4*
 (b.biWidth = 3, sizeof(RGBTRIPLE) = 3)
 = 3
 
