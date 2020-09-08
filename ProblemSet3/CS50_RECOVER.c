@@ -1,3 +1,5 @@
+// To execute: ./recover card.raw
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
