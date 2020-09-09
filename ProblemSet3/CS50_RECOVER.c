@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     }
 
     // making declerations
-    typedef uint8_t  BYTE; //making a struct
+    typedef uint8_t  BYTE; //defining a type
     int numjpg = 0; //to count recovered imgage number
     BYTE buffer[512]; //???OR -> BYTE* buffer = malloc(512 * sizeof(BYTE));
     int b = 512;
