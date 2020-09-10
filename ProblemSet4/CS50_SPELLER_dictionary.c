@@ -1,4 +1,6 @@
 // Implements a dictionary's functionality
+// To execute: ./speller texts/lalaland.txt
+// To Compare: ~cs50/2019/fall/pset5/speller texts/lalaland.txt
 
 #include <ctype.h>
 #include <stdbool.h>
