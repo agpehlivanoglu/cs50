@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles-index.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+        <title>My Webpage</title>
+
+        <!-- Burası javaScript, güncel tarihi gösteriyor sitede-->
+        <script type="text/javascript">
+            function showDate() {
+            var d = new Date();
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1; //months are zero based
+            var curr_year = d.getFullYear();
+            document.write(curr_date + "-" + curr_month + "-" + curr_year);
+            }
+        </script>
+    </head>
+
+    <body>
+        <br>
+        <!-- Üst sayfa linkleri, her sayfada var-->
+        <div class="header">
+          <h1>Welcome to my homepage!</h1>
+          <div class="header-right">
+            <a class="home" href="index.html">Home</a>
+            <a class="about" href="About.html">About</a>
+            <a class="contact" href="Contact.html">Contact</a>
+            <a class="cv" href="ShortCV.html">Short CV</a>
+            <a class="memes" href="MyMemes.html">Memes</a>
+          </div>
+        </div>
+
+        <!-- AGP gif, siteden çekiyor-->
+        <p align="center"><iframe src="https://ntmaker.gfto.ru/newneontexten/?image_height=300&image_width=600&image_font_shadow_width=50&image_font_size=90&image_background_color=1F1F1F&image_text_color=56FF49&image_font_shadow_color=4493F7&image_url=&image_text=Ahmet Gürcan Pehlivanoğlu&image_font_family=Nickainley&" frameborder='no' scrolling='no' width="600" height="300"></iframe></p>
+
+        <img class="roket1" alt="cute gif" src="roket1.gif" style="float:left"> <!-- Gifler-->
+        <img class="roket2" alt="cute gif" src="roket2.gif" style="float:right">
+        <br><br><br><br><br><br><br><br>
+        <div class="shortintro"> Gamer, Food Lover, Geek, Aerospace Engineer </div>
+        <div class="tarih"><script type="text/javascript">showDate();</script></div> <!-- Baştaki javaScript-->
+        <div style="clear: left;"/>
+
+        <!-- Youtube videosu-->
+        <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L_LUpnjgPso?autoplay=1&cc_load_policy=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        </div>
+
+        <!-- Alt sosyal medya linkleri-->
+        <table>
+            <tr>
+                <th><a href="https://www.instagram.com/ahmet_grcn/" target="_blank"><img alt="Instagram Logo" src="Insta.png" width="100" height="100"></a></th>
+                <th><a href="https://www.facebook.com/bjk.gurcan/" target="_blank" ><img alt="Facebook Logo" src="Face.png" width="120" height="120"></a></th>
+                <th><a href="https://www.linkedin.com/in/agpehlivanoglu99/" target="_blank" ><img alt="LinkedIn Logo" src="Linked.png" width="100" height="100"></a></th>
+                <th><a href="https://open.spotify.com/user/11131979641?si=ZK7QPlxiTVel6tugNVwr1Q" target="_blank"><img alt="Spotify Logo" src="Spotify.png" width="150" height="150"></a></th>
+            </tr>
+
+        </table>
+
+
+        <p>
+        If you want to know me a little bit more, here is your adress: <a href="About.html">About me</a>
+        </p>
+
+        Copyright &#169; Ahmet Gürcan Pehlivanoğlu
+
+    </body>
+</html>

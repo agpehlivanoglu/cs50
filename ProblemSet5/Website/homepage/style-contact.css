@@ -1,0 +1,205 @@
+body {
+  animation: 50000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #CD853F;
+  }
+  20% {
+    background-color: indianred;
+  }
+  40% {
+    background-color: gold;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: #CD853F;
+  }
+}
+
+body { overflow-x: hidden; }
+
+.header {
+  overflow: hidden;
+  background-color: #d1d1d1;
+  opacity: 0.6;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-size:40px 40px;
+  position: static;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 80px;
+  border-radius: 5px;
+  font-family: 'Amaranth';
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: blue;
+  font-weight: bold;
+  transition: .4s ease;
+  margin:5px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.slm h2
+{
+
+    width: 17%;
+    position: relative;
+    right:250px;
+    top: 30px;
+    margin-left: 200px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family:"Finger Paint";
+    font-size: 36px;
+    float:right;
+    animation: 700ms ease-in-out infinite color-change2, 5s ease-in-out infinite leftright;
+}
+
+
+@keyframes leftright
+{
+  0% {top:50px;}
+  50% {top:420px;}
+  100% {top:50;}
+}
+@keyframes color-change2 {
+  0% {
+    color: teal;
+  }
+  20% {
+    color: gold;
+  }
+  40% {
+    color: indianred;
+  }
+  60% {
+    color: violet;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: teal;
+  }
+}
+
+
+.ilk
+{
+    width: 50%;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px red;
+    color: white;
+    font-size: x-large;
+    position: relative;
+    left: 20px;
+    text-align: left;
+
+
+}
+
+.ikinci
+{
+    width: 50%;
+    text-shadow: 3px 3px 3px blue;
+    color: white;
+    font-size: x-large;
+    position: relative;
+    left: 20px;
+    text-align: left;
+
+}
+
+
+li
+{
+
+    color: #000000;
+    font-family: Galindo;
+  	white-space: pre;
+
+}
+
+ul
+{
+
+    width:50%;
+    margin-left: 50px;
+    border:3px solid #456879;
+	  border-radius:15px;
+	  background-color : rgba(255, 255, 255, 0.4);
+	  color: #FFFFFF;
+    font-size: large;
+    position: relative;
+    left: 20px;
+    text-align: left;
+
+}
+
+.mail
+{
+  text-align: center;
+  position: static;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  color: #FFFFFF;
+  margin-top: 50px;
+  transition: transform 2s;
+  transition-timing-function: ease;
+  width: 350px;
+  height:80px;
+  font-weight: bold;
+
+}
+
+button
+{
+  position: static;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mail:hover
+{
+  transform: rotate(360deg);
+}
+
+.son
+{
+    	font-family: Comic Sans MS;
+    	white-space: pre;
+}
