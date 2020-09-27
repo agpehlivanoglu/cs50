@@ -1,3 +1,5 @@
+// ./runoff Alice Bob Charlie
+
 #include <cs50.h>
 #include <stdio.h>
 #include <math.h>
